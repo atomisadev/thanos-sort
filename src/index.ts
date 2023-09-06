@@ -14,5 +14,3 @@ export const thanosSort = (arr: number[]): number[] => {
     arr = arr.slice(0, n);
   }
 };
-
-console.log(thanosSort([1, 2, 3, 4, 9, 6]));
