@@ -20,13 +20,13 @@ Just a little lossy, but again, who gives a damn?
 
 ## Installation
 ```
-npm install @atomdevelops/thanos-sort
+npm install thanos-sort
 ```
 And you can import the `thanosSort` function right away to start implementing the most efficient algorithm in the world.
 
 ## Usage
 ```typescript
-import { thanosSort } from "@atomisadev/thanos-sort";
+import { thanosSort } from "thanos-sort";
 
 const arr: number[] = [10, 9, 8, 7, 6];
 
