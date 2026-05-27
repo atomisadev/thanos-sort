@@ -1,16 +1,15 @@
 export const thanosSort = (arr: number[]): number[] => {
-  let n = arr.length;
+  const len = arr.length;
 
-  while (true) {
-    let i: number = 0;
-
-    while (i < n - 1 && arr[i] <= arr[i + 1]) {
-      i++;
+  for (let i = 0; i < len - 1; i++) {
+    if (arr[i] > arr[i + 1]) {
+      let n = len >> 1;
+      while (n > i) {
+        n >>= 1;
+      }
+      return arr.slice(0, n);
     }
-
-    if (i === n - 1) return arr.slice(0, n);
-
-    n = Math.floor(n / 2);
-    arr = arr.slice(0, n);
   }
+
+  return arr;
 };
